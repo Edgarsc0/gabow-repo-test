@@ -8,7 +8,7 @@ import Select from 'react-select'
 import { useEffect } from 'react'
 import axios from 'axios'
 import Ley from './Ley'
-
+import Menu from "./Menu"
 // const icon = new Icon({
 //     iconUrl: '/marker.svg',
 //     iconSize: [50, 50]
@@ -82,7 +82,7 @@ const Mapa = () => {
             <Head>
                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
             </Head>
-
+            <Menu/>
             {/* BUSCADOR */}
             <div className={styles.container2}>
                 <Select className={styles.buscador}  options={data} onChange={cambiar} placeholder='Buscar'/>
