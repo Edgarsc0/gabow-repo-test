@@ -6,7 +6,6 @@ const Menu = () => {
     return (
         <>
             {/* <Info /> */}
-            <Inicio/>
         </>
     )
 }
