@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import Head from 'next/head'
 import dynamic from "next/dynamic"
-
+import Menu from "../components/Menu";
 const MyAwesomeMap = dynamic(() => import("../components/Mapa"), { ssr: false })
 
 const Index = () => {

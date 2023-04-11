@@ -59,11 +59,7 @@ const Mapa = () => {
     
     const cambiar = selectedOption => {
         const mapC = mapRef.current;
-        console.log(mapC.e);
-        console.log(mapC);
-        console.log(mapC.options.onClick);
-        const handler=mapC.options.onClick;
-        handler();
+
         mapC.flyTo(selectedOption.value, 18, {
             duration: 2
         });
@@ -74,9 +70,7 @@ const Mapa = () => {
             duration:2
         });
     }
-    const handleClick=(event)=>{
-        console.log(event.latlng);
-    }   
+
     // const handleSharePositionRedirect=()=>{
     //     window.location.href="/Share";
     // }
