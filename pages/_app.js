@@ -2,5 +2,5 @@ import '@/styles/globals.css'
 import Menu from "../components/Menu"
 
 export default function App({ Component, pageProps }) {
-  return <><Component {...pageProps} /><Menu/></>
+  return <Component {...pageProps} ><Menu/></Component>
 }
