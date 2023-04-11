@@ -98,7 +98,7 @@ const Mapa = () => {
 
             {/* MAPA */}        
             <div className={styles.container}>
-                <MapContainer ref={mapRef} center={cord} zoom={11} zoomControl={false} onClick={handleClick}>
+                <MapContainer ref={mapRef} center={cord} zoom={11} zoomControl={false} >
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
